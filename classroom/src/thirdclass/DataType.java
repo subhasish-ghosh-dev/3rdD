@@ -19,19 +19,24 @@ public class DataType {
 	
 	    
 		
-	    String st = "আমার সোনার বাংলা আমি তমালকে ভালবাসি";
+	    String st = "আমার সোনার বাংলা আমি তমাকে ভালবাসি  |চিরদিন তোমার আকাশ"
+	    		+ ""
+	    		+ " ";
 	    
-	    char[] ch = {'\u0634', '\u0633', '\u0612', ' ', '\u0634', '\u0633', '\u0612'};
+	    //char[] ch = {'\u0634', '\u0633', '\u0612', ' ', '\u0634', '\u0633', '\u0612'};
 	    
-	    
+	    char[] ch = {'\u0978','\u0981'};
 	    
 	    public DataType(){
 	    	System.out.printf("%7.17f",d);
+	    	System.out.println(st);
 	    	System.out.println(Double.MIN_VALUE);
 	    	System.out.println(Double.MAX_VALUE);
 	    	
 	    	System.out.println(Float.MIN_VALUE);
 	    	System.out.println(Float.MAX_VALUE);
+	    	
+	    	System.out.println("Character sequence creates String: "+ new String(ch));
 	    	
 	    	i = 1234;
 	    	
@@ -48,7 +53,9 @@ public class DataType {
 	    	DataType dt = new DataType();
 	    	CseStudnet s =  new CseStudnet();
 	    	Student st = new Student();//(Student) s;
-	    	s = (CseStudnet)st;
+	    	BbaStudent bba = new BbaStudent();
+	    	//s = (CseStudnet)st;
+	    	st  = (Student) s;
 	    
 	    }
 	    
