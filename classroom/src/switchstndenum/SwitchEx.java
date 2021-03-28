@@ -4,7 +4,8 @@ import java.util.TimeZone;
 import java.util.*;
 import java.text.*;
 
-public class SwitchEx {
+
+public class SwitchEx implements ITimeCalculator {
 	
 	//  int, short, byte char, String, Enum
 	
@@ -68,18 +69,18 @@ public class SwitchEx {
 				break;
 				
 			case "EST":
-				Calendar c = Calendar.getInstance();
+				/*Calendar c = Calendar.getInstance();
 				c.add(Calendar.HOUR, -11);
 				
 				Date dt1 = c.getTime();			
 				time = sdf.format(dt1);
 				
-				System.out.println("EST TIME: "+time);
-				/*TimeZone.setDefault(TimeZone.getTimeZone("EST"));
+				System.out.println("EST TIME: "+time);*/
+				TimeZone.setDefault(TimeZone.getTimeZone("EST"));
 				Date dt1 = new Date();			
 				String time1 = sdf.format(dt1);			
 				System.out.println("EST TIME: "+time1);
-				*/
+				
 				break;
 			
 			default:
@@ -103,6 +104,16 @@ public class SwitchEx {
 		//SwitchEx s1 = new SwitchEx();
 		s.adjustClock("EST");
 		
+		
+	}
+
+
+	@Override
+	public void calculate() {
+		// TODO Auto-generated method stub
+		System.out.println("I calculate time");
+		switchOnIntegers((byte)1);
+
 	}
 
 }

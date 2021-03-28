@@ -9,7 +9,7 @@ last2("hixxhi") → 1
 last2("xaxxaxaxx") → 1
 last2("axxxaaxx") → 2
  */
-
+import bin.main.*;
 
 public class Last2 {
 	
@@ -31,7 +31,7 @@ public class Last2 {
 		else{
 			return 0;
 		}
-		
+	
 		
 	}
 
@@ -40,6 +40,9 @@ public class Last2 {
 		Last2 l = new Last2();
 		int c =l.last2("axxxaaxx");
 		System.out.println(c);
+		Timez t = new Timez();
+		t.u = 10;
+		
 	}
 
 }
