@@ -16,7 +16,7 @@ public class Employee {
 	protected void input(){
 		System.out.println("Please Enter account, name, tax serially");
 		Scanner sc = new Scanner(System.in);
-		String[] inputs = new String[3];
+		/*String[] inputs = new String[3];
 		int i=0;
 		while(sc.hasNext()){
 			if(i<=2){
@@ -30,7 +30,10 @@ public class Employee {
 		
 		account = inputs[0];
 		name = inputs[1];
-		tax = Double.valueOf(inputs[2]);
+		tax = Double.valueOf(inputs[2]);*/
+		account = sc.nextLine();
+		name = sc.nextLine();
+		tax = Double.valueOf(sc.nextLine());
 		
 		sc.close();
 	}
