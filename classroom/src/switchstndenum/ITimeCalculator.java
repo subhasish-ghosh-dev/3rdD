@@ -1,7 +1,5 @@
 package switchstndenum;
 
-public interface ITimeCalculator {
-
-	
-	public  void calculate();
+public interface ITimeCalculator {	
+	void calculate();
 }

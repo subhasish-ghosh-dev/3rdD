@@ -9,7 +9,7 @@ public class Rectangle extends Shape {
 	@Override
 	protected double calculateArea() {
 		// TODO Auto-generated method stub
-		return super.width*super.height;
+		return width*height;
 	}
 
 }

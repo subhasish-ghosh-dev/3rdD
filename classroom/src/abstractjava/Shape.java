@@ -55,8 +55,8 @@ public abstract class Shape {
 		
 	}
 	
-	protected void display(){
-		System.out.println("Area: "+area);
+	public void display(){
+		System.out.println("Area: "+this.calculateArea());
 	}
 	
 	private double claculatePerimeterOfTriangle(){
